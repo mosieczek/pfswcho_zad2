@@ -2,7 +2,7 @@ name: GitHub Action flow to Docker hub
 
 on:
   push:
-    branches: [zad2]
+    branches: [zad4]
 
 jobs:
   build-push-images:
@@ -32,6 +32,8 @@ jobs:
           context: ./
           file: ./dockerfile.v1
           push: true
+          cache-from: type=registry,ref=mosieczek/pfswcho_zad2:v1
+          cache-to: type=inline
           tags: |
-            mosieczek/pfswcho_zad2:v3
+            mosieczek/pfswcho_zad2:v4
           
