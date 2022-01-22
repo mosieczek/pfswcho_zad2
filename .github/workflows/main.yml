@@ -37,5 +37,5 @@ jobs:
           file: ./dockerfile.v1
           push: true
           tags: |
-            mosieczek/pfswcho_zad2:v2
+            mosieczek/pfswcho_zad2:v3
           
