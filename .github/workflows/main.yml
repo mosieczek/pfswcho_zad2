@@ -32,7 +32,7 @@ jobs:
           context: ./
           file: ./dockerfile.v1
           push: true
-          cache-from: type=registry,ref=mosieczek/pfswcho_zad2:v1
+          cache-from: type=registry,ref=mosieczek/pfswcho_zad2:v4
           cache-to: type=inline
           tags: |
             mosieczek/pfswcho_zad2:v4
